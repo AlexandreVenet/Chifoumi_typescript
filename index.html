@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Chifoumi</title>
+</head>
+<body>
+	
+	<main>
+		<div class="jeu">
+			<h1>Chifoumi</h1>
+			<div class="scores">
+				<div>Ordinateur : <span id="scoreMCP">0</span></div>
+				<div>Être humain : <span id="scoreHuman">0</span></div>
+			</div>
+			<div class="ecran">
+				<div id="coupMCP">🎲</div>
+				<div id="coupHuman">🎲</div>
+			</div>
+			<div id="nav" class="nav">
+				<button data-nom="0">👊<span>Pierre</span></button>
+				<button data-nom="1">✋<span>Feuille</span></button>
+				<button data-nom="2">✌️<span>Ciseaux</span></button>
+			</div>
+			<div class="options">
+				<button class="restart" id="restart">🧻<span>Relancer</span></button>
+			</div>
+		</div>
+	</main>
+	
+	<audio id="audioPerd" src="audio/mixkit-arcade-video-game-explosion-2810.wav" preload="auto"></audio>
+	<audio id="audioGagne" src="audio/mixkit-retro-arcade-casino-notification-211.wav" preload="auto"></audio>
+	<audio id="audioEgalite" src="audio/mixkit-metal-hit-woosh-1485.wav" preload="auto"></audio>
+	<audio id="audioRestart" src="audio/mixkit-funny-cartoon-fast-splat-2889.wav" preload="auto"></audio>
+
+	<script src="./js/chifoumi.js"></script>
+	<script src="./js/main.js"></script>
+</body>
+</html>
