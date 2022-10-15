@@ -47,8 +47,8 @@ function NavClick(e:Event)
 	
 	if(button)
 	{
-		// button.tabIndex = -1;
-		// button.blur();
+		button.tabIndex = -1;
+		button.blur();
 
 		const datasetNom = button.dataset.nom;
 		if(datasetNom)
